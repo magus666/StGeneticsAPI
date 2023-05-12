@@ -10,6 +10,11 @@ namespace StGeneticsAPI.Controllers
     {
         Cl_Purchase ClPurchase = new Cl_Purchase();
 
+        /// <summary>
+        /// Asynchronous method to insert a purchase into the system
+        /// </summary>
+        /// <returns></returns>
+
         [AcceptVerbs("POST")]
         public async Task<List<OrderTotalPurchaseModel>> PostPurchase(PurchasesModel Purchase)
         {
