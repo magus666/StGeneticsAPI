@@ -32,8 +32,8 @@ namespace StGeneticsAPI.Logic
                     {
 
                         OrderTotalPurchaseModel ObjectOrderPurchase = new OrderTotalPurchaseModel();
-                        ObjectOrderPurchase.OrderId = (int)RespuestaReader["OrderId"];
-                        ObjectOrderPurchase.TotalPurchase = (decimal)RespuestaReader["TotalPurchase"];
+                        ObjectOrderPurchase.OrderId = Convert.ToInt32 (RespuestaReader["OrderId"]);
+                        ObjectOrderPurchase.TotalPurchase = Convert.ToDecimal(RespuestaReader["TotalPurchase"]);
                         OrderTotalPurchase.Add(ObjectOrderPurchase);
 
                     }
