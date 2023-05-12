@@ -77,7 +77,7 @@ namespace StGeneticsAPI.Controllers
         }
 
         [AcceptVerbs("DELETE")]
-        [BasicAuthentication]
+        //[BasicAuthentication]
         public async Task<bool> DeleteAnimal(int AnimalId)
         {
             var response = await ClAnimal.DeleteAnimal(AnimalId);
