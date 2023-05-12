@@ -161,6 +161,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\BasicAuthenticationAttribute.cs" />
     <Compile Include="Logic\Cl_Animal.cs" />
     <Compile Include="Logic\Cl_Purchase.cs" />
     <Compile Include="Models\AnimalModel.cs" />
