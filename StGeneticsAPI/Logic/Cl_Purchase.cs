@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace StGeneticsAPI.Logic
@@ -31,12 +30,12 @@ namespace StGeneticsAPI.Logic
                     List<OrderTotalPurchaseModel> OrderTotalPurchase = new List<OrderTotalPurchaseModel>();
                     while (RespuestaReader.Read())
                     {
-                        
+
                         OrderTotalPurchaseModel ObjectOrderPurchase = new OrderTotalPurchaseModel();
                         ObjectOrderPurchase.OrderId = (int)RespuestaReader["OrderId"];
                         ObjectOrderPurchase.TotalPurchase = (decimal)RespuestaReader["TotalPurchase"];
                         OrderTotalPurchase.Add(ObjectOrderPurchase);
-                        
+
                     }
                     return OrderTotalPurchase;
                 }
